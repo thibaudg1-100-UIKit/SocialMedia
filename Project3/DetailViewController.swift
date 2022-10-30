@@ -45,7 +45,7 @@ class DetailViewController: UIViewController {
         }
         
         let vc = UIActivityViewController(activityItems: [imageName, image], applicationActivities: [])
-        vc.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
+        vc.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem // needed for iPad that displays a floating popover with an arrow pointing to the UI element that triggered the popover
         present(vc, animated: true)
     }
     /*
